@@ -1,0 +1,36 @@
+<html>
+ <head>
+   <title>DOM</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ 
+ <body>
+	<h3>Get elements by Name</h3>
+	<label>Gender</label>
+	<input type ="radio" value="Male"  name="gen"> Male
+	<input type ="radio" value="Female" name="gen"> Female
+	<button onclick="getResult()">view</button>
+	
+ <script>
+ function getResult()
+ {
+	var gender=document.getElementsByName("gen");
+	var m = gender.length;
+	
+	if (gender[0].checked)
+	{
+	 alert(gender[0].value);
+	}
+	
+	else if (gender[1].checked)
+	{
+	 alert(gender[1].value);
+	}
+	else 
+	{
+	 alert("please select any gender");
+	}
+ }
+ </script>
+ </body>
+</html>

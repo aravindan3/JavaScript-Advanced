@@ -1,0 +1,35 @@
+<html>
+ <head>
+   <title>DOM</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ 
+ <body>
+ <h3>Get elements by class name </h3>
+ <label>Mark-1</label>
+ <input type="text" class="mark">
+ <label>Mark-2</label>
+ <input type="text" class="mark">
+ <label>Mark-3</label>
+ <input type="text" class="mark">
+ <button onclick="getResult()">Result</button>
+
+ <script>
+ function getResult()
+ {
+	 var m=document.getElementsByClassName("mark");
+	 var n=m.length;
+	 var tot=0;
+	 for (var i=0;i<n;i++)
+	 {
+	 tot=tot+Number(m[i].value);
+	 
+	 }
+	 alert("Total:" +tot);
+ }
+ 
+  
+	 
+  </script>
+  </body>
+</html>
